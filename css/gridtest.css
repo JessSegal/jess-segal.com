@@ -1,0 +1,505 @@
+body {font-family: 'Montserrat', sans-serif;}
+
+.wrapper {
+  display: grid; 
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-columns: 10px auto 10px;
+}
+
+.title, .nav, .image, .marketing, .main, .header {grid-column: 2/3;}
+
+h1, h2, h3, h4, h5 {font-family: 'Roboto', sans-serif; font-weight: 700}
+p {line-height: 1.6em;}
+
+
+.header {
+	grid-row: 1/2;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	padding: 1.5em;
+}
+
+.title {
+	display: inline-flex;  
+}
+
+.title h1 {
+	color: black; 
+	font-size: 4em;
+	margin: 0;
+}
+
+.title a {text-decoration: none; color: black;}
+
+.nav {
+	display: inline-flex;
+	justify-content: flex-end;
+	flex: 1;
+}
+.nav ul {list-style: none; padding: 0; margin-bottom:0;}
+.nav ul li {display: inline-block; padding-left: 4.5em;}
+
+.nav a{ 
+	text-decoration: none;  
+	color: black; 
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 1.3em; 
+	text-align: center;
+ }
+.nav a:hover {color:#00bccd;}
+
+.footer{
+	grid-row: 4/5;
+	grid-column: 2/3;
+	justify-content: center;
+	text-align: center; 
+	font-family: sans-serif;
+	color: #bbbbbb;
+	padding: 20px 0 20px 0;
+}
+.social {margin: 2% 5% 4%;}
+
+.fa {
+	padding: 0.5em;
+    width: 1em;
+    text-align: center;
+    text-decoration: none;
+    margin: 0.5em;
+    border-radius: 50%;
+    font-size: 1.5em !important;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #00bccd;
+  color: white;
+}
+
+.fa-twitter {
+  background: #00cdcd;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #00bccd;
+  color: white;
+}
+
+.fa-instagram {
+  background: #00cdcd;
+  color: white;
+}
+
+.main {
+	grid-row:3/4;
+}
+
+.sectionheader {
+	display: flex;
+  	flex-wrap: wrap;
+  	justify-content: center;
+  	flex-direction: column;
+  	margin: 2% 12%;
+  }
+
+.sectionheader h1 {
+	color: black;
+	font-family: 'Roboto', sans-serif;
+	font-size: 2.5em;
+	text-align: center;
+	margin: 0;
+}
+.sectionheader p {text-align: center; margin: 1.3em 1em 2em;}
+
+.homepage-text {
+	display: flex;
+	flex-flow: row wrap;
+	max-width: 60%;
+	margin:auto;
+	justify-content: center;
+	padding-top: 2em;
+}
+
+.art { 
+	display: flex;
+  	flex-wrap: wrap;
+  	padding: 0px 0 50px 0;
+  	justify-content: center;
+}
+
+.artcolumn {
+  flex: 30%;
+  /*max-width: 30%;*/
+  padding: 0 8px;
+}
+
+.artcolumn img {
+  padding-bottom: 12px;
+  vertical-align: middle;
+  max-width: 100%
+}
+
+.exhibits {
+	grid-row:3/4; 
+	display: flex; 
+	flex-direction: row; 
+	flex-wrap: wrap; 
+	justify-content: center;
+	margin-top: 40px
+}
+.exhibitwrapper {
+	max-width: 40%;
+	margin: 0 20px 20px 20px;
+}
+.exhibits img {
+	max-width: 100%;
+}
+
+.curated-exhibits{
+	margin: 2% 12%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center; 
+}
+.curated-exhibits p span {font-weight: bold; font-style: italic;}
+
+.juried {margin-bottom: 0 !important;}
+.juror {padding-left: 4em; margin-top: 0 !important;}
+
+.marketing {
+	grid-row:3/4; 
+	display: flex; 
+	flex-direction: row; 
+	flex-wrap: wrap; 
+	justify-content: center;
+}
+
+.marketing-page, .home-page {
+	display: flex;
+	flex-direction: column;
+	grid-row: 3/4;
+	grid-column: 2/3;
+	align-items: center;
+  	justify-content: center;
+}
+
+/*.banner-image {max-width: 99%;}*/
+
+.cover-image-home {
+	width: 100%;
+  	height: 500px;
+  	background-image: url(../images/jess-tokidoki-header.jpg);
+  	background-size: cover;
+  	background-repeat:no-repeat;
+  	background-position:center; 
+  }
+  .cover-image-marketing{
+	width: 100%;
+  	height: 500px;
+  	background-image: url(../images/digital-marketing4.jpg);
+  	background-size: cover;
+  	background-repeat:no-repeat;
+  	background-position:center; 
+  }
+
+  .cover-image-art{
+  	width: 100%;
+  	height: 500px;
+  	background-image: url(../images/quest-header.jpg);
+  	background-size: cover;
+  	background-repeat:no-repeat;
+  	background-position:center; 
+  }
+
+.marketing-page-card{
+	text-align: center;
+	max-width:80%;
+	margin-top: -50px;
+	background-color: #ffffff;
+	box-shadow: 2px 2px 15px 2px rgba(0, 0, 0, 0.2);
+	margin-bottom: 1em;
+}
+
+.marketing-page-info {text-align: left; padding:1em 1.5em; max-width: 80%;}
+
+.marketing-page-card h1 {margin: 1.8em;}
+
+
+.client { 
+	max-width: 500px; 
+	text-decoration: none;
+	text-align: center;
+	margin: 10px 40px;
+}
+.client img {max-width: 100%}
+
+.client a {text-decoration: none; color: #303030;}
+
+/*.card {
+	margin: 5px 20px; 
+	height: 475px; 
+	width: 315px; 
+	font-family: sans-serif;
+	text-decoration: none;
+	box-shadow: 2px 2px 15px 2px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.card a {text-decoration: none; color: #303030;}
+
+.card:hover{
+    box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.2);}
+
+.cardimage {width: 315px;}
+
+.cardcontent {
+	padding: 5px 10px; 
+	text-align: center;
+}*/
+
+.content {
+	display: grid;
+	grid-row: 3/4;
+	grid-column: 2/3;
+  	grid-template-columns: 1fr 1fr 1fr;
+  	grid-row-gap: 80px;
+  	margin: 10px 200px;
+}
+
+.cover-image-distinct{
+	width: 100%;
+  	height: 300px;
+  	background-image: url(../images/Distinct-Header.jpg);
+  	background-size: cover;
+  	background-repeat:no-repeat;
+  	background-position:center; 
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	flex-direction: column;
+  	position: relative;
+  }
+
+  .cover-image-sweet{
+	width: 100%;
+  	height: 300px;
+  	background-image: url(../images/SSC-Horizontal.jpg);
+  	background-size: cover;
+  	background-repeat:no-repeat;
+  	background-position:center; 
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	flex-direction: column;
+  	position: relative;
+  }
+
+  .cover-image-ncc{
+	width: 100%;
+  	height: 300px;
+  	background-image: url(../images/NCC_Horizontal.jpg);
+  	background-size: cover;
+  	background-repeat:no-repeat;
+  	background-position:center; 
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	flex-direction: column;
+  	position: relative;
+  }
+
+  .cover-image-illuminate{
+	width: 100%;
+  	height: 300px;
+  	background-image: url(../images/illuminate-space.jpg);
+  	background-size: cover;
+  	background-repeat:no-repeat;
+  	background-position:center; 
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	flex-direction: column;
+  	position: relative;
+  }
+
+  .header-title {
+  	text-align: center;
+  	color: white;
+  	font-size: 4em;
+  	margin: 0;
+  	line-height: 1em;
+  	z-index: 1;
+  }
+
+  .header-subtitle {
+  	text-align: center;
+  	color: white;
+  	margin: 1em 0 0;
+  	z-index: 1;
+  }
+
+.overlay {
+	width: 100%;
+	height: 100%;
+	background: #008080;
+	opacity: 0.7;
+	position: absolute;
+}
+
+.page-text {padding: 3em 1.5em;}
+
+.color-row {
+	background: #800080;
+	padding: 5% 0;
+}
+
+.nocolor-row {
+	background: white;
+	padding: 5% 0;
+}
+
+
+.example {
+	display: flex;
+	flex-flow: row wrap;
+	max-width: 80%;
+	margin:auto;
+	justify-content: space-between;
+}
+
+.example-text h1 {font-size: 2.5em;}
+
+
+.email-text h1 { 
+	margin: 0 auto .5em auto; 
+	color: #00bccd;
+}
+
+.email-text p {color: #ffffff;}
+
+.email-examples {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	margin: 2% 0;
+}
+
+.email-img {max-width: 30%;}
+
+.email-examples img { max-width: 100%;}
+
+.social-img {max-width: 30%; align-self: center;}
+
+.social-text {max-width: 60%; align-self: center;}
+
+.web-img {max-width: 40%; align-self: center;}
+.web-img img {max-width: 100%;}
+
+.web-text {max-width: 50%; align-self: center;}
+
+.web-text h1 { 
+	margin: 0 auto .5em auto; 
+	color: #00bccd;
+}
+
+.web-text p {color: #ffffff;}
+
+
+.sociallinks {
+	display: inline-flex;
+	list-style: none; 
+	padding: 0;
+	margin: 0;
+}
+.sociallinks li {text-align: left; padding-right: 5em; padding-top: 1em; padding-bottom: 2em;}
+.sociallinks a {text-decoration: none; color: black; font-weight: bold;}
+.sociallinks a:hover {color:#00bccd;}
+
+
+/** LIGHTBOX MARKUP **/
+
+.lightbox {
+	/** Default lightbox to hidden */
+	display: none;
+
+	/** Position and style */
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	overflow: scroll;
+}
+
+.lightbox img {
+	/** Pad the lightbox image */
+	max-width: 80%;
+	margin-top: 2%;
+}
+
+.lightbox:target {
+	/** Remove default browser outline */
+	outline: none;
+
+	/** Unhide lightbox **/
+	display: block;
+}
+
+
+
+
+
+
+
+/*MEDIA QUERIES*/
+
+
+@media only screen and (max-width: 600px) 
+{
+	.header {flex-direction: column; align-items: center;}
+	.title {font-size: 0.7em;}
+	.nav ul li { display: flex; justify-content: center; padding:10px 15px;}
+	.cover-image-home {height: 400px;}
+	.artcolumn {flex: 100%; max-width: 100%;}
+	.exhibits {flex: 100%; max-width: 100%;}
+	.exhibitwrapper {max-width: 100%; margin: 20px 0;}
+	.sectionheader {justify-content: center;}
+	.marketing-page {flex: 100%; max-width: 100%;}
+	.client {flex: 100%; max-width: 100%; margin: 10px;}
+	.marketing-page-card {max-width: 90%; margin-top:-30px;}
+	.marketing-page-card p {margin: 0px 20px 20px 20px;}
+	.header-title {font-size: 3.5em;}
+	.example {flex-flow: column wrap;}
+	.social-text, .web-text, .social-img, .web-img {max-width: 100%;}
+	.color-row, .nocolor-row {padding: 15% 0;}
+	.email-text, .web-text {padding-bottom: 2em;}
+	.footer {margin: 5% 0;}
+	.homepage-text {max-width: 90%}
+	.sociallinks { display: flex; flex-direction: column;}
+	.sociallinks li {padding: 1em 0; text-align: center;}
+}
+
+@media only screen and (max-width: 330px)
+{
+	.title {font-size: 0.6em;}
+	.header-title {font-size: 2.5em;}
+	.fa {font-size: 1.25em !important;}
+}
+
+@media only screen and (max-width: 1020px) and (min-width: 601px)
+{
+	.header {flex-direction: column; align-items: center;}
+	.nav { margin: 1em 0em; }
+	.nav ul li {padding: 0em 1.8em;}
+	.homepage-text {max-width: 80%}
+}
+
+
+
