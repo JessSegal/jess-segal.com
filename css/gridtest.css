@@ -140,7 +140,7 @@ p {line-height: 1.6em;}
 .artcolumn img {
   padding-bottom: 12px;
   vertical-align: middle;
-  max-width: 100%
+  width: 100%;
 }
 
 .exhibits {
