@@ -3,10 +3,11 @@ body {font-family: 'Montserrat', sans-serif;}
 .wrapper {
   display: grid; 
   grid-template-rows: auto auto auto auto auto;
-  grid-template-columns: 10px auto 10px;
+  grid-template-columns: 0px auto 0px;
+  margin: 0;
 }
 
-.title, .nav, .image, .marketing, .main, .header {grid-column: 2/3;}
+.title, .nav, .image, .marketing, .main, .header {grid-column: 1/4;}
 
 h1, h2, h3, h4, h5 {font-family: 'Roboto', sans-serif; font-weight: 700}
 p {line-height: 1.6em;}
@@ -17,7 +18,7 @@ p {line-height: 1.6em;}
 	display: flex;
 	flex-wrap: wrap;
 	align-items: baseline;
-	padding: 1.5em;
+	padding: 1.5em 3em;
 }
 
 .title {
