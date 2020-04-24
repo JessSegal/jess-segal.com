@@ -104,7 +104,8 @@ p {line-height: 1.6em;}
   	flex-wrap: wrap;
   	justify-content: center;
   	flex-direction: column;
-  	margin: 2% 12%;
+  	max-width: 60%;
+  	/*margin: 2% 12%;*/
   }
 
 .sectionheader h1 {
@@ -144,6 +145,12 @@ p {line-height: 1.6em;}
   width: 100%;
 }
 
+.below-art-grid {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
 .exhibits {
 	grid-row:3/4; 
 	display: flex; 
@@ -161,10 +168,11 @@ p {line-height: 1.6em;}
 }
 
 .curated-exhibits{
-	margin: 2% 12%;
+	/*margin: 2% 12%;*/
 	display: flex;
 	flex-direction: column;
 	justify-content: center; 
+	max-width: 60%;
 }
 .curated-exhibits p span {font-weight: bold; font-style: italic;}
 
@@ -218,16 +226,16 @@ p {line-height: 1.6em;}
 
 .marketing-page-card{
 	text-align: center;
-	max-width:80%;
+	max-width:75%;
 	margin-top: -50px;
 	background-color: #ffffff;
 	box-shadow: 2px 2px 15px 2px rgba(0, 0, 0, 0.2);
 	margin-bottom: 1em;
 }
 
-.marketing-page-info {text-align: left; padding:1em 1.5em; max-width: 80%;}
+.marketing-page-info {text-align: left; padding:1em 1.5em; max-width: 60%;}
 
-.marketing-page-card h1 {margin: 1.8em;}
+.marketing-page-card h1 {margin: 1.8em 2.6em;}
 
 
 .client { 
